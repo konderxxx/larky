@@ -1,2 +1,4 @@
 # larky
-Aplikacja budzik, dostępna na Google Play.
+Budzik, najlepszy budzik, budzik for ADHD people.
+Google Play 10/10/26
+App Store SOON
