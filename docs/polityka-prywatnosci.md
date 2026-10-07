@@ -1,6 +1,6 @@
 # Polityka prywatności — Larky
 
-**Ostatnia aktualizacja:** 01.09.2026
+**Ostatnia aktualizacja:** 07.10.2026
 **Aplikacja:** Larky (Android, identyfikator `com.sonntech.larky`)
 **Administrator danych:** Sonntech Maciej Gierłachowski
 **Kontakt:** konderdev@gmail.com
@@ -66,10 +66,36 @@ odzyskać dane po zmianie telefonu. Otrzymujemy wtedy:
 Nie mamy dostępu do Twojej poczty, kontaktów, plików ani żadnych innych
 usług Google.
 
+**Imię i nazwisko z konta Google nie są nigdzie publikowane.** Nie
+pokazujemy ich innym użytkownikom.
+
+### Zakupy planu PRO (tylko jeśli kupujesz albo wchodzisz w zakupy)
+
+Płatności obsługuje **Google Play** — dane karty i płatności widzi tylko
+Google, nie my. Do sprawdzania, czy masz aktywny plan PRO, korzystamy
+z usługi **RevenueCat**. Otrzymuje ona:
+
+- losowy identyfikator klienta tworzony przez aplikację — bez imienia
+  i adresu e-mail, niepowiązany z kontem w chmurze ani z kontem Google,
+- informacje o zakupach z Google Play: identyfikator i token zakupu,
+  kupiony plan, daty zakupu, odnowienia i wygaśnięcia oraz status
+  subskrypcji (np. okres próbny, anulowanie),
+- dane techniczne przesyłane przy połączeniu, m.in. wersję aplikacji
+  i systemu, język, kraj sklepu i adres IP.
+
+Aplikacja łączy się z RevenueCat dopiero wtedy, gdy sam wejdziesz
+w zakupy (ekran PRO, „Przywróć zakupy"), albo gdy Sklep Play na Twoim
+telefonie potwierdzi, że to konto Google ma zakup Larky — wtedy po
+reinstalacji lub na nowym telefonie aplikacja sama przywraca plan. Samo
+to sprawdzenie odbywa się w Sklepie Play na telefonie i nic nie trafia
+przy nim do nas ani do RevenueCat. Jeśli nic nie kupujesz i nie
+wchodzisz w zakupy, aplikacja nie łączy się z RevenueCat.
+
 ### Czego NIE zbieramy
 
 Lokalizacji, kontaktów, listy zainstalowanych aplikacji, nagrań
-dźwiękowych, zdjęć, identyfikatorów reklamowych. Nie korzystamy
+dźwiękowych, zdjęć, identyfikatorów reklamowych ani danych karty
+płatniczej. Nie korzystamy
 z analityki, narzędzi do raportowania awarii ani reklam.
 
 ---
@@ -87,6 +113,11 @@ Publikacja szablonu misji w społeczności odbywa się na podstawie
 opublikowanie szablonu. Zgodę możesz wycofać, usuwając szablon
 w aplikacji.
 
+Dane zakupów przetwarzamy, aby wykonać umowę sprzedaży planu PRO
+(**wykonanie umowy**, art. 6 ust. 1 lit. b RODO): sprawdzić, czy masz
+dostęp do funkcji PRO, oraz obsłużyć okres próbny, odnowienia, zmianę
+planu i przywracanie zakupów.
+
 ---
 
 ## Uprawnienia aplikacji
@@ -98,7 +129,8 @@ w aplikacji.
   ekran dzwonienia pojawił się na zablokowanym telefonie.
 - **Aparat** — wyłącznie w misjach „Zeskanuj kod" i „Misja foto".
   Obraz jest analizowany na urządzeniu i nigdzie nie jest wysyłany.
-- **Czujniki ruchu** — misje „Potrząśnij" i „Poziomica".
+- **Czujniki ruchu** — misje „Potrząśnij", „Poziomica" i „Kroki".
+- **Płatności w Google Play** — zakup planu PRO.
 
 ---
 
@@ -107,8 +139,12 @@ w aplikacji.
 - **Supabase** — nasz dostawca bazy danych i uwierzytelniania. Dane są
   przechowywane na serwerach w **Unii Europejskiej** i przesyłane
   wyłącznie połączeniem szyfrowanym (HTTPS).
+- **RevenueCat, Inc.** (USA) — obsługa zakupów planu PRO. Dane mogą być
+  przetwarzane poza Europejskim Obszarem Gospodarczym, na zasadach umowy
+  powierzenia przetwarzania danych zawartej z RevenueCat.
 - **Google** — jeśli korzystasz z logowania przez Google, Google
-  potwierdza Twoją tożsamość zgodnie ze swoją polityką prywatności.
+  potwierdza Twoją tożsamość; płatności za plan PRO obsługuje Google
+  Play. W obu przypadkach zgodnie z polityką prywatności Google.
 
 Nie przekazujemy danych nikomu innemu i nie sprzedajemy ich.
 
@@ -123,6 +159,12 @@ odznaki.
 
 Po usunięciu konta wszystkie Twoje dane w chmurze znikają
 natychmiast i nieodwracalnie.
+
+Dane zakupów w RevenueCat przechowujemy, dopóki są potrzebne do obsługi
+Twojego planu (także dożywotniego) i rozliczeń. Usunięcie konta
+w aplikacji ich nie obejmuje, bo nie są z nim powiązane — o ich
+usunięcie poproś na adres kontaktowy. Subskrypcję anulujesz w Google
+Play (Płatności i subskrypcje).
 
 ---
 
