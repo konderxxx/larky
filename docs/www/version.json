@@ -1,0 +1,4 @@
+{
+  "_": "Najnowsza wersja Larky ROZPROPAGOWANA w Google Play. Czyta to baner aktualizacji w aplikacji (lib/appUpdate.ts). Podbijaj DOPIERO wtedy, gdy wydanie jest faktycznie do pobrania ze sklepu - wcześniej tester zobaczy baner i trafi na kartę bez aktualizacji. Format: od dwoch do czterech czlonow liczbowych.",
+  "latest": "0.9.0"
+}
