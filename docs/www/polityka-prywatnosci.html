@@ -19,7 +19,7 @@
         </p>
         <h1>Polityka prywatności</h1>
         <p class="meta">
-          Ostatnia aktualizacja: <strong>7 października 2026</strong><br />
+          Ostatnia aktualizacja: <strong>4 listopada 2026</strong><br />
           Aplikacja: Larky (Android, <code>com.sonntech.larky</code>)<br />
           Administrator danych: <strong>Sonntech Maciej Gierłachowski</strong
           ><br />
@@ -38,8 +38,9 @@
           Jeśli włączysz synchronizację z chmurą, zapisujemy wyłącznie to, co
           jest potrzebne, żeby Twoja seria pobudek, osiągnięcia i historia snu
           przeżyły zmianę telefonu. <strong>Nie sprzedajemy danych, nie
-          wyświetlamy reklam, nie używamy żadnej analityki ani narzędzi
-          śledzących.</strong>
+          wyświetlamy reklam i nie używamy narzędzi śledzących.</strong>
+          Jedyne statystyki to anonimowe liczniki kroków wprowadzenia przy
+          pierwszym uruchomieniu i wyświetleń ekranu PRO (opis niżej).
         </p>
         <p>
           Zdjęcia z misji foto <strong>nigdy nie opuszczają Twojego
@@ -109,7 +110,7 @@
         Nie pokazujemy ich innym użytkownikom.
       </p>
 
-      <h3>Zakupy planu PRO (tylko jeśli kupujesz albo wchodzisz w zakupy)</h3>
+      <h3>Zakupy planu PRO</h3>
       <p>
         Płatności obsługuje <strong>Google Play</strong> — dane karty
         i płatności widzi tylko Google, nie my. Do sprawdzania, czy masz
@@ -132,21 +133,73 @@
         </li>
       </ul>
       <p>
-        Aplikacja łączy się z RevenueCat dopiero wtedy, gdy sam wejdziesz
-        w zakupy (ekran PRO, „Przywróć zakupy"), albo gdy Sklep Play na Twoim
-        telefonie potwierdzi, że to konto Google ma zakup Larky — wtedy po
-        reinstalacji lub na nowym telefonie aplikacja sama przywraca plan.
-        Samo to sprawdzenie odbywa się w Sklepie Play na telefonie i nic nie
-        trafia przy nim do nas ani do RevenueCat. Jeśli nic nie kupujesz i nie
-        wchodzisz w zakupy, aplikacja nie łączy się z RevenueCat.
+        Aplikacja łączy się z RevenueCat, gdy pokazuje ekran PRO z cenami
+        planów — po Twoim wejściu w zakupy, na końcu wprowadzenia przy
+        pierwszym uruchomieniu albo przy kolejnym uruchomieniu, jeśli
+        wprowadzenie zostało przerwane — przy „Przywróć zakupy" oraz gdy
+        Sklep Play na Twoim telefonie potwierdzi, że to konto Google ma zakup
+        Larky (wtedy po reinstalacji lub na nowym telefonie aplikacja sama
+        przywraca plan). Samo to sprawdzenie odbywa się w Sklepie Play na
+        telefonie i nic nie trafia przy nim do nas ani do RevenueCat.
+      </p>
+
+      <h3>Anonimowe statystyki wprowadzenia (pierwsze uruchomienie)</h3>
+      <p>
+        Przy pierwszym uruchomieniu aplikacja prowadzi przez krótkie
+        wprowadzenie. Żeby wiedzieć, na którym kroku ludzie rezygnują,
+        wysyłamy do naszej bazy danych (Supabase) wyłącznie:
+      </p>
+      <ul>
+        <li>
+          nazwę kroku, do którego doszło wprowadzenie (np. „ustawiony pierwszy
+          budzik"),
+        </li>
+        <li>wersję aplikacji,</li>
+        <li>język aplikacji.</li>
+      </ul>
+      <p>
+        Bez identyfikatora konta, urządzenia czy instalacji i bez żadnych
+        danych o Tobie. Każdy krok trafia do nas najwyżej raz, więc widzimy
+        tylko zbiorcze liczby: nie da się z nich ustalić, kim jesteś, ani
+        połączyć kroków jednej osoby. Adresu IP przy tych statystykach nie
+        zapisujemy. Przełącznik „Przechowuj statystyki lokalnie" w ustawieniach
+        wstrzymuje tę wysyłkę.
+      </p>
+
+      <h3>Anonimowe statystyki ekranu PRO</h3>
+      <p>
+        Żeby wiedzieć, które miejsca w aplikacji prowadzą do planu PRO,
+        wysyłamy do naszej bazy danych (Supabase) wyłącznie:
+      </p>
+      <ul>
+        <li>
+          rodzaj zdarzenia: wyświetlenie ekranu PRO, zamknięcie go bez zakupu,
+          rozpoczęcie okresu próbnego albo zakup,
+        </li>
+        <li>
+          miejsce, z którego otwarto ekran PRO (np. „koniec wprowadzenia",
+          „kłódka przy statystykach"), i funkcję PRO, której dotyczyło,
+        </li>
+        <li>przy zakupie — rodzaj planu (miesięczny, roczny, dożywotni),</li>
+        <li>
+          czy to pierwsze wyświetlenie ekranu PRO na tym telefonie (znacznik
+          zapisany tylko na telefonie),
+        </li>
+        <li>wersję i język aplikacji.</li>
+      </ul>
+      <p>
+        Tak samo jak przy wprowadzeniu: bez identyfikatora konta, urządzenia
+        czy instalacji i bez danych o Tobie, więc nie da się połączyć zdarzeń
+        jednej osoby. Adresu IP przy tych statystykach nie zapisujemy.
+        Przełącznik „Przechowuj statystyki lokalnie" wstrzymuje i tę wysyłkę.
       </p>
 
       <h3>Czego NIE zbieramy</h3>
       <p>
         Lokalizacji, kontaktów, listy zainstalowanych aplikacji, nagrań
         dźwiękowych, zdjęć, identyfikatorów reklamowych ani danych karty
-        płatniczej. Nie korzystamy
-        z analityki, narzędzi do raportowania awarii ani reklam.
+        płatniczej. Nie korzystamy z zewnętrznych narzędzi analitycznych,
+        narzędzi do raportowania awarii ani reklam.
       </p>
 
       <h2>Po co nam te dane i na jakiej podstawie</h2>
@@ -168,6 +221,12 @@
         (<strong>wykonanie umowy</strong>, art. 6 ust. 1 lit. b RODO):
         sprawdzić, czy masz dostęp do funkcji PRO, oraz obsłużyć okres
         próbny, odnowienia, zmianę planu i przywracanie zakupów.
+      </p>
+      <p>
+        Anonimowe statystyki wprowadzenia i ekranu PRO zbieramy w naszym
+        <strong>prawnie uzasadnionym interesie</strong> (art. 6 ust. 1 lit. f
+        RODO), którym jest ulepszanie pierwszego uruchomienia aplikacji i oferty
+        planu PRO. Nie zawierają danych, które pozwalałyby Cię zidentyfikować.
       </p>
 
       <h2>Uprawnienia aplikacji</h2>
@@ -193,6 +252,13 @@
         <li>
           <strong>Czujniki ruchu</strong> — misje „Potrząśnij", „Poziomica"
           i „Kroki".
+        </li>
+        <li>
+          <strong>Usługa ułatwień dostępu</strong> (tylko w planie PRO i tylko
+          po Twojej zgodzie w aplikacji) — blokada wyłączenia telefonu:
+          podczas dzwonienia budzika zamyka menu zasilania i szufladę
+          powiadomień. Nie odczytuje zawartości ekranu ani tego, co wpisujesz,
+          i nie zbiera ani nie wysyła żadnych danych.
         </li>
         <li>
           <strong>Płatności w Google Play</strong> — zakup planu PRO.

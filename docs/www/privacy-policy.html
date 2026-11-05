@@ -19,7 +19,7 @@
         </p>
         <h1>Privacy Policy</h1>
         <p class="meta">
-          Last updated: <strong>7 October 2026</strong><br />
+          Last updated: <strong>4 November 2026</strong><br />
           App: Larky (Android, <code>com.sonntech.larky</code>)<br />
           Data controller: <strong>Sonntech Maciej Gierłachowski</strong><br />
           Contact:
@@ -36,8 +36,10 @@
         <p>
           If you turn on cloud sync, we store only what is needed for your
           wake-up streak, achievements and sleep history to survive a change of
-          phone. <strong>We do not sell data, show ads, or use any analytics or
-          tracking tools.</strong>
+          phone. <strong>We do not sell data, show ads, or use tracking
+          tools.</strong> The only statistics are anonymous counts of the
+          introduction steps on first launch and of PRO screen views
+          (described below).
         </p>
         <p>
           Photos taken in the photo mission <strong>never leave your
@@ -108,7 +110,7 @@
         We do not show it to other users.
       </p>
 
-      <h3>PRO plan purchases (only if you buy or open the purchase screens)</h3>
+      <h3>PRO plan purchases</h3>
       <p>
         Payments are handled by <strong>Google Play</strong> — only Google sees
         your card and payment details, we don't. To check whether you have an
@@ -132,22 +134,72 @@
         </li>
       </ul>
       <p>
-        The app connects to RevenueCat only when you open the purchase screens
-        yourself (the PRO screen, "Restore purchases"), or when the Play Store
-        on your phone confirms that this Google account owns a Larky purchase —
-        then, after a reinstall or on a new phone, the app restores your plan
-        on its own. That check itself happens in the Play Store on your phone
-        and sends nothing to us or to RevenueCat. If you don't buy anything and
-        don't open the purchase screens, the app does not connect to
-        RevenueCat.
+        The app connects to RevenueCat when it shows the PRO screen with plan
+        prices — when you open it yourself, at the end of the introduction on
+        first launch, or on the next launch if the introduction was
+        interrupted — on "Restore purchases", and when the Play Store on your
+        phone confirms that this Google account owns a Larky purchase (then,
+        after a reinstall or on a new phone, the app restores your plan on its
+        own). That check itself happens in the Play Store on your phone and
+        sends nothing to us or to RevenueCat.
+      </p>
+
+      <h3>Anonymous introduction statistics (first launch)</h3>
+      <p>
+        On first launch the app walks you through a short introduction. To
+        learn at which step people give up, we send to our database
+        (Supabase) only:
+      </p>
+      <ul>
+        <li>
+          the name of the step the introduction reached (e.g. "first alarm
+          set"),
+        </li>
+        <li>the app version,</li>
+        <li>the app language.</li>
+      </ul>
+      <p>
+        No account, device or installation identifier, and no data about you.
+        Each step reaches us at most once, so we only see totals: they cannot
+        tell us who you are or link the steps of one person. We do not store
+        the IP address with these statistics. The "Keep stats local" switch in
+        the settings stops this sending.
+      </p>
+
+      <h3>Anonymous PRO screen statistics</h3>
+      <p>
+        To learn which places in the app lead to the PRO plan, we send to our
+        database (Supabase) only:
+      </p>
+      <ul>
+        <li>
+          the kind of event: the PRO screen shown, closed without buying, a
+          free trial started, or a purchase,
+        </li>
+        <li>
+          where the PRO screen was opened from (e.g. "end of the
+          introduction", "lock next to statistics") and which PRO feature it
+          was about,
+        </li>
+        <li>for a purchase — the kind of plan (monthly, yearly, lifetime),</li>
+        <li>
+          whether this is the first time the PRO screen was shown on this
+          phone (a marker stored only on the phone),
+        </li>
+        <li>the app version and language.</li>
+      </ul>
+      <p>
+        Just like the introduction statistics: no account, device or
+        installation identifier and no data about you, so events of one person
+        cannot be linked. We do not store the IP address with these
+        statistics. The "Keep stats local" switch stops this sending too.
       </p>
 
       <h3>What we do NOT collect</h3>
       <p>
         Location, contacts, the list of installed apps, audio recordings,
         photos, advertising identifiers or payment card details. We use no
-        analytics, no crash
-        reporting and no advertising.
+        third-party analytics tools, no crash reporting and no advertising.
       </p>
 
       <h2>Why we process this data, and on what legal basis</h2>
@@ -169,6 +221,12 @@
         (<strong>performance of a contract</strong>, Article 6(1)(b) GDPR): to
         check whether you have access to PRO features and to handle the free
         trial, renewals, plan changes and purchase restoration.
+      </p>
+      <p>
+        We collect the anonymous introduction and PRO screen statistics based
+        on our <strong>legitimate interest</strong> (Article 6(1)(f) GDPR) in
+        improving the app's first launch and the PRO plan offer. They contain
+        no data that could identify you.
       </p>
 
       <h2>App permissions</h2>
@@ -192,6 +250,13 @@
         <li>
           <strong>Motion sensors</strong> — the "Shake", "Level" and "Steps"
           missions.
+        </li>
+        <li>
+          <strong>Accessibility service</strong> (PRO plan only, and only after
+          you agree in the app) — the phone power-off guard: while an alarm is
+          ringing it closes the power menu and the notification shade. It
+          does not read screen content or what you type, and it does not
+          collect or send any data.
         </li>
         <li>
           <strong>Google Play payments</strong> — buying the PRO plan.
