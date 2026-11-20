@@ -19,7 +19,7 @@
         </p>
         <h1>Polityka prywatności</h1>
         <p class="meta">
-          Ostatnia aktualizacja: <strong>8 listopada 2026</strong><br />
+          Ostatnia aktualizacja: <strong>14 listopada 2026</strong><br />
           Aplikacja: Larky (Android, <code>com.sonntech.larky</code>)<br />
           Administrator danych: <strong>Sonntech Maciej Gierłachowski</strong
           ><br />
@@ -40,7 +40,8 @@
           przeżyły zmianę telefonu. <strong>Nie sprzedajemy danych, nie
           wyświetlamy reklam i nie używamy narzędzi śledzących.</strong>
           Jedyne statystyki to anonimowe liczniki kroków wprowadzenia przy
-          pierwszym uruchomieniu i wyświetleń ekranu PRO (opis niżej).
+          pierwszym uruchomieniu, wyświetleń ekranu PRO i dobrowolnej oceny
+          samopoczucia po pobudce (opis niżej).
         </p>
         <p>
           Zdjęcia z misji foto <strong>nigdy nie opuszczają Twojego
@@ -181,13 +182,19 @@
       <ul>
         <li>
           rodzaj zdarzenia: wyświetlenie ekranu PRO, zamknięcie go bez zakupu,
-          rozpoczęcie okresu próbnego albo zakup,
+          stuknięcie przycisku zakupu (zanim otworzy się okno Google Play),
+          rezygnacja w oknie Google Play albo błąd zakupu, rozpoczęcie okresu
+          próbnego albo zakup, a przy zamknięciu, stuknięciu i wyniku zakupu
+          — ile sekund minęło od pokazania ekranu PRO,
         </li>
         <li>
           miejsce, z którego otwarto ekran PRO (np. „koniec wprowadzenia",
           „kłódka przy statystykach"), i funkcję PRO, której dotyczyło,
         </li>
-        <li>przy zakupie — rodzaj planu (miesięczny, roczny, dożywotni),</li>
+        <li>
+          przy stuknięciu przycisku zakupu i przy zakupie — rodzaj planu
+          (miesięczny, roczny, dożywotni),
+        </li>
         <li>
           czy to pierwsze wyświetlenie ekranu PRO na tym telefonie (znacznik
           zapisany tylko na telefonie),
@@ -199,6 +206,29 @@
         czy instalacji i bez danych o Tobie, więc nie da się połączyć zdarzeń
         jednej osoby. Adresu IP przy tych statystykach nie zapisujemy.
         Przełącznik „Przechowuj statystyki lokalnie" wstrzymuje i tę wysyłkę.
+      </p>
+
+      <h3>Anonimowa ocena samopoczucia („Jak się czujesz?")</h3>
+      <p>
+        Po pierwszej pobudce dnia aplikacja może zapytać, jak się czujesz,
+        w skali od 1 do 5. Odpowiedź jest dobrowolna. Żeby wiedzieć, po
+        których misjach budzenie jest najprzyjemniejsze, wysyłamy do naszej
+        bazy danych (Supabase) wyłącznie:
+      </p>
+      <ul>
+        <li>wybraną ocenę (od 1 do 5),</li>
+        <li>
+          listę misji budzika, który właśnie zadzwonił, z ich poziomem
+          trudności (np. „matematyka, poziom 2; skan kodu"),
+        </li>
+        <li>wersję i język aplikacji.</li>
+      </ul>
+      <p>
+        Bez identyfikatora konta, urządzenia czy instalacji, bez godziny
+        budzika i bez danych o Tobie, więc nie da się ustalić, kto wystawił
+        ocenę, ani połączyć ocen jednej osoby. Adresu IP przy tych
+        statystykach nie zapisujemy. Przełącznik „Przechowuj statystyki
+        lokalnie" wstrzymuje i tę wysyłkę.
       </p>
 
       <h3>Czego NIE zbieramy</h3>
@@ -230,10 +260,11 @@
         próbny, odnowienia, zmianę planu i przywracanie zakupów.
       </p>
       <p>
-        Anonimowe statystyki wprowadzenia i ekranu PRO zbieramy w naszym
-        <strong>prawnie uzasadnionym interesie</strong> (art. 6 ust. 1 lit. f
-        RODO), którym jest ulepszanie pierwszego uruchomienia aplikacji i oferty
-        planu PRO. Nie zawierają danych, które pozwalałyby Cię zidentyfikować.
+        Anonimowe statystyki wprowadzenia, ekranu PRO i oceny samopoczucia
+        zbieramy w naszym <strong>prawnie uzasadnionym interesie</strong>
+        (art. 6 ust. 1 lit. f RODO), którym jest ulepszanie pierwszego
+        uruchomienia aplikacji, oferty planu PRO i misji budzika. Nie zawierają
+        danych, które pozwalałyby Cię zidentyfikować.
       </p>
 
       <h2>Uprawnienia aplikacji</h2>

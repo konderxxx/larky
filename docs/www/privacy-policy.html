@@ -19,7 +19,7 @@
         </p>
         <h1>Privacy Policy</h1>
         <p class="meta">
-          Last updated: <strong>8 November 2026</strong><br />
+          Last updated: <strong>14 November 2026</strong><br />
           App: Larky (Android, <code>com.sonntech.larky</code>)<br />
           Data controller: <strong>Sonntech Maciej Gierłachowski</strong><br />
           Contact:
@@ -38,8 +38,8 @@
           wake-up streak, achievements and sleep history to survive a change of
           phone. <strong>We do not sell data, show ads, or use tracking
           tools.</strong> The only statistics are anonymous counts of the
-          introduction steps on first launch and of PRO screen views
-          (described below).
+          introduction steps on first launch, of PRO screen views and of an
+          optional how-do-you-feel rating after waking up (described below).
         </p>
         <p>
           Photos taken in the photo mission <strong>never leave your
@@ -181,15 +181,21 @@
       </p>
       <ul>
         <li>
-          the kind of event: the PRO screen shown, closed without buying, a
-          free trial started, or a purchase,
+          the kind of event: the PRO screen shown, closed without buying, the
+          buy button tapped (before the Google Play window opens), cancelled
+          in the Google Play window or a purchase error, a free trial started,
+          or a purchase — and for closing, the tap and the purchase result,
+          how many seconds passed since the PRO screen was shown,
         </li>
         <li>
           where the PRO screen was opened from (e.g. "end of the
           introduction", "lock next to statistics") and which PRO feature it
           was about,
         </li>
-        <li>for a purchase — the kind of plan (monthly, yearly, lifetime),</li>
+        <li>
+          for a buy button tap and for a purchase — the kind of plan (monthly,
+          yearly, lifetime),
+        </li>
         <li>
           whether this is the first time the PRO screen was shown on this
           phone (a marker stored only on the phone),
@@ -201,6 +207,29 @@
         installation identifier and no data about you, so events of one person
         cannot be linked. We do not store the IP address with these
         statistics. The "Keep stats local" switch stops this sending too.
+      </p>
+
+      <h3>Anonymous how-do-you-feel rating</h3>
+      <p>
+        After the first wake-up of the day the app may ask how you feel, on a
+        scale from 1 to 5. Answering is optional. To learn after which
+        missions waking up feels best, we send to our database (Supabase)
+        only:
+      </p>
+      <ul>
+        <li>the rating you chose (from 1 to 5),</li>
+        <li>
+          the list of missions of the alarm that just rang, with their
+          difficulty level (e.g. "math, level 2; scan a code"),
+        </li>
+        <li>the app version and language.</li>
+      </ul>
+      <p>
+        No account, device or installation identifier, no alarm time and no
+        data about you, so it is not possible to tell who gave a rating or to
+        link the ratings of one person. We do not store the IP address with
+        these statistics. The "Keep stats local" switch stops this sending
+        too.
       </p>
 
       <h3>What we do NOT collect</h3>
@@ -231,10 +260,11 @@
         trial, renewals, plan changes and purchase restoration.
       </p>
       <p>
-        We collect the anonymous introduction and PRO screen statistics based
-        on our <strong>legitimate interest</strong> (Article 6(1)(f) GDPR) in
-        improving the app's first launch and the PRO plan offer. They contain
-        no data that could identify you.
+        We collect the anonymous introduction, PRO screen and how-do-you-feel
+        statistics based on our <strong>legitimate interest</strong>
+        (Article 6(1)(f) GDPR) in improving the app's first launch, the PRO
+        plan offer and the alarm missions. They contain no data that could
+        identify you.
       </p>
 
       <h2>App permissions</h2>
