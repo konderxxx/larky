@@ -19,7 +19,7 @@
         </p>
         <h1>Polityka prywatności</h1>
         <p class="meta">
-          Ostatnia aktualizacja: <strong>14 listopada 2026</strong><br />
+          Ostatnia aktualizacja: <strong>24 listopada 2026</strong><br />
           Aplikacja: Larky (Android, <code>com.sonntech.larky</code>)<br />
           Administrator danych: <strong>Sonntech Maciej Gierłachowski</strong
           ><br />
@@ -40,13 +40,14 @@
           przeżyły zmianę telefonu. <strong>Nie sprzedajemy danych, nie
           wyświetlamy reklam i nie używamy narzędzi śledzących.</strong>
           Jedyne statystyki to anonimowe liczniki kroków wprowadzenia przy
-          pierwszym uruchomieniu, wyświetleń ekranu PRO i dobrowolnej oceny
-          samopoczucia po pobudce (opis niżej).
+          pierwszym uruchomieniu, wyświetleń ekranu PRO, dobrowolnej oceny
+          samopoczucia po pobudce i punktualności budzika (opis niżej).
         </p>
         <p>
-          Zdjęcia z misji foto <strong>nigdy nie opuszczają Twojego
-          telefonu</strong> — są sprawdzane lokalnie, modelem działającym
-          offline.
+          Zdjęcia z misji foto i obraz z kamery w misji „Ćwiczenia”
+          <strong>nigdy nie opuszczają Twojego telefonu</strong> — są
+          sprawdzane lokalnie, modelem działającym offline. Obrazu z misji
+          „Ćwiczenia” nie zapisujemy nawet na telefonie.
         </p>
       </div>
 
@@ -231,6 +232,34 @@
         lokalnie" wstrzymuje i tę wysyłkę.
       </p>
 
+      <h3>Anonimowa punktualność budzika</h3>
+      <p>
+        Żeby sprawdzać, czy budzik dzwoni na czas na różnych telefonach, przy
+        pierwszym dzwonieniu budzika wysyłamy do naszej bazy danych
+        (Supabase) wyłącznie:
+      </p>
+      <ul>
+        <li>
+          o ile ekran budzika pojawił się po ustawionej godzinie — tylko
+          przedział (na czas, 1–5 min, 5–30 min albo ponad 30 min), bez
+          samej godziny budzika,
+        </li>
+        <li>
+          czy w tej chwili aplikacja miała zgody potrzebne budzikowi
+          (powiadomienia, dokładne alarmy, bateria bez ograniczeń, pełny
+          ekran, wyświetlanie nad innymi aplikacjami),
+        </li>
+        <li>producenta telefonu (np. „samsung") i wersję Androida,</li>
+        <li>wersję i język aplikacji.</li>
+      </ul>
+      <p>
+        Bez identyfikatora konta, urządzenia czy instalacji, bez modelu
+        telefonu i bez danych o Tobie, więc nie da się ustalić, czyj to był
+        budzik, ani połączyć wpisów jednej osoby. Adresu IP przy tych
+        statystykach nie zapisujemy. Przełącznik „Przechowuj statystyki
+        lokalnie" wstrzymuje i tę wysyłkę.
+      </p>
+
       <h3>Czego NIE zbieramy</h3>
       <p>
         Lokalizacji, kontaktów, listy zainstalowanych aplikacji, nagrań
@@ -260,11 +289,12 @@
         próbny, odnowienia, zmianę planu i przywracanie zakupów.
       </p>
       <p>
-        Anonimowe statystyki wprowadzenia, ekranu PRO i oceny samopoczucia
-        zbieramy w naszym <strong>prawnie uzasadnionym interesie</strong>
-        (art. 6 ust. 1 lit. f RODO), którym jest ulepszanie pierwszego
-        uruchomienia aplikacji, oferty planu PRO i misji budzika. Nie zawierają
-        danych, które pozwalałyby Cię zidentyfikować.
+        Anonimowe statystyki wprowadzenia, ekranu PRO, oceny samopoczucia
+        i punktualności budzika zbieramy w naszym <strong>prawnie
+        uzasadnionym interesie</strong> (art. 6 ust. 1 lit. f RODO), którym
+        jest ulepszanie pierwszego uruchomienia aplikacji, oferty planu PRO,
+        misji budzika i niezawodności budzenia. Nie zawierają danych, które
+        pozwalałyby Cię zidentyfikować.
       </p>
 
       <h2>Uprawnienia aplikacji</h2>
@@ -283,9 +313,11 @@
           zablokowanym telefonie.
         </li>
         <li>
-          <strong>Aparat</strong> — wyłącznie w misjach „Zeskanuj kod"
-          i „Misja foto". Obraz jest analizowany na urządzeniu i nigdzie nie
-          jest wysyłany.
+          <strong>Aparat</strong> — wyłącznie w misjach „Zeskanuj kod",
+          „Misja foto" i „Ćwiczenia". Obraz jest analizowany na urządzeniu
+          i nigdzie nie jest wysyłany. W misji „Ćwiczenia” model na telefonie
+          rozpoznaje tylko położenie stawów (kolan, łokci), żeby policzyć
+          przysiady albo pompki — obraz nie jest zapisywany.
         </li>
         <li>
           <strong>Czujniki ruchu</strong> — misje „Potrząśnij", „Poziomica"

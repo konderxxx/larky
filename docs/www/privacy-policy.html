@@ -19,7 +19,7 @@
         </p>
         <h1>Privacy Policy</h1>
         <p class="meta">
-          Last updated: <strong>14 November 2026</strong><br />
+          Last updated: <strong>24 November 2026</strong><br />
           App: Larky (Android, <code>com.sonntech.larky</code>)<br />
           Data controller: <strong>Sonntech Maciej Gierłachowski</strong><br />
           Contact:
@@ -38,13 +38,15 @@
           wake-up streak, achievements and sleep history to survive a change of
           phone. <strong>We do not sell data, show ads, or use tracking
           tools.</strong> The only statistics are anonymous counts of the
-          introduction steps on first launch, of PRO screen views and of an
-          optional how-do-you-feel rating after waking up (described below).
+          introduction steps on first launch, of PRO screen views, of an
+          optional how-do-you-feel rating after waking up and of alarm
+          punctuality (described below).
         </p>
         <p>
-          Photos taken in the photo mission <strong>never leave your
-          phone</strong> — they are checked locally, by a model that runs
-          offline.
+          Photos taken in the photo mission and the camera image in the
+          Exercises mission <strong>never leave your phone</strong> — they are
+          checked locally, by a model that runs offline. The Exercises camera
+          image is not saved, not even on your phone.
         </p>
       </div>
 
@@ -232,6 +234,34 @@
         too.
       </p>
 
+      <h3>Anonymous alarm punctuality</h3>
+      <p>
+        To check whether the alarm rings on time on different phones, when an
+        alarm rings for the first time we send to our database (Supabase)
+        only:
+      </p>
+      <ul>
+        <li>
+          how late the alarm screen appeared after the set time — only a range
+          (on time, 1–5 min, 5–30 min or over 30 min), without the alarm time
+          itself,
+        </li>
+        <li>
+          whether the app had the permissions an alarm needs at that moment
+          (notifications, exact alarms, unrestricted battery, full screen,
+          display over other apps),
+        </li>
+        <li>the phone manufacturer (e.g. "samsung") and Android version,</li>
+        <li>the app version and language.</li>
+      </ul>
+      <p>
+        No account, device or installation identifier, no phone model and no
+        data about you, so it is not possible to tell whose alarm it was or to
+        link the entries of one person. We do not store the IP address with
+        these statistics. The "Keep stats local" switch stops this sending
+        too.
+      </p>
+
       <h3>What we do NOT collect</h3>
       <p>
         Location, contacts, the list of installed apps, audio recordings,
@@ -260,11 +290,11 @@
         trial, renewals, plan changes and purchase restoration.
       </p>
       <p>
-        We collect the anonymous introduction, PRO screen and how-do-you-feel
-        statistics based on our <strong>legitimate interest</strong>
-        (Article 6(1)(f) GDPR) in improving the app's first launch, the PRO
-        plan offer and the alarm missions. They contain no data that could
-        identify you.
+        We collect the anonymous introduction, PRO screen, how-do-you-feel and
+        alarm punctuality statistics based on our <strong>legitimate
+        interest</strong> (Article 6(1)(f) GDPR) in improving the app's first
+        launch, the PRO plan offer, the alarm missions and how reliably the
+        alarm wakes you. They contain no data that could identify you.
       </p>
 
       <h2>App permissions</h2>
@@ -282,8 +312,11 @@
           ringing screen appears on a locked phone.
         </li>
         <li>
-          <strong>Camera</strong> — only in the "Scan a code" and photo
-          missions. The image is analysed on your device and is never uploaded.
+          <strong>Camera</strong> — only in the "Scan a code", photo and
+          Exercises missions. The image is analysed on your device and is never
+          uploaded. In the Exercises mission an on-device model only detects
+          the position of your joints (knees, elbows) to count squats or
+          push-ups — the image is not saved.
         </li>
         <li>
           <strong>Motion sensors</strong> — the "Shake", "Level" and "Steps"
